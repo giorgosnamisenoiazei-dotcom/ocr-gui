@@ -100,6 +100,5 @@ main.columnconfigure(1, weight=1)
 main.rowconfigure(2, weight=1)
 main.rowconfigure(5, weight=1)
 
-root.bind('<Return>', convert_lists)
 
 root.mainloop()

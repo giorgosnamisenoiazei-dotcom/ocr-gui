@@ -13,7 +13,7 @@ def add_numbers(event=None):
 
 root = tk.Tk()
 root.title("Adder GUI")
-root.geometry("320x180")
+root.geometry("320x240")
 root.resizable(False, False)
 
 main = ttk.Frame(root, padding=16)
@@ -23,7 +23,6 @@ entry_a = ttk.Entry(main, width=20)
 entry_b = ttk.Entry(main, width=20)
 result_var = tk.StringVar(value="")
 
-
 ttk.Label(main, text="First number").grid(row=0, column=0, sticky="w", pady=(0, 4))
 entry_a.grid(row=1, column=0, sticky="ew", pady=(0, 10))
 
@@ -32,7 +31,7 @@ entry_b.grid(row=3, column=0, sticky="ew", pady=(0, 10))
 
 ttk.Button(main, text="Add", command=add_numbers).grid(row=4, column=0, sticky="ew", pady=(0, 10))
 
-ttk.Label(main, text="Result").grid(row=5, column=0, sticky="w")
+ttk.Label(main, text="Result").grid(row=5, column=0, sticky="w", pady=(0, 4))
 result_entry = ttk.Entry(main, textvariable=result_var, state="readonly", width=20)
 result_entry.grid(row=6, column=0, sticky="ew")
 

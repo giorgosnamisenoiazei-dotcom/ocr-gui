@@ -14,7 +14,7 @@ def add_numbers(event=None):
 root = tk.Tk()
 root.title("Adder GUI")
 root.geometry("320x240")
-root.resizable(False, False)
+root.minsize(320, 240)
 
 main = ttk.Frame(root, padding=16)
 main.pack(fill="both", expand=True)
